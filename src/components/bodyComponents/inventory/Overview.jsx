@@ -4,11 +4,11 @@ import {
   TableBody,
   TableCell,
   TableContainer,
-  TableHead,
+  // TableHead,
   TableRow,
   Typography,
 } from "@mui/material";
-import React from "react";
+
 
 export default function Overview() {
   return (
@@ -17,7 +17,7 @@ export default function Overview() {
         <Table>
           <TableBody>
             <TableRow>
-              <TableCell>Total Product</TableCell>
+              <TableCell>Total Item</TableCell>
               <TableCell align="right">
                 <Typography variant="subtitle1" fontWeight="bold">
                   15226
@@ -26,7 +26,7 @@ export default function Overview() {
             </TableRow>
 
             <TableRow>
-              <TableCell>Today sell</TableCell>
+              <TableCell>Today Issued</TableCell>
               <TableCell align="right">
                 <Typography variant="subtitle1" fontWeight="bold">
                   5241
@@ -35,7 +35,7 @@ export default function Overview() {
             </TableRow>
 
             <TableRow>
-              <TableCell>Yesterday sell</TableCell>
+              <TableCell>Yesterday Issued</TableCell>
               <TableCell align="right">
                 <Typography variant="subtitle1" fontWeight="bold">
                   3652
@@ -44,7 +44,7 @@ export default function Overview() {
             </TableRow>
 
             <TableRow>
-              <TableCell>Total sell</TableCell>
+              <TableCell>Total Issued</TableCell>
               <TableCell align="right">
                 <Typography variant="subtitle1" fontWeight="bold">
                   11425
@@ -53,7 +53,7 @@ export default function Overview() {
             </TableRow>
 
             <TableRow>
-              <TableCell>Product Reserved</TableCell>
+              <TableCell>Item In-stock</TableCell>
               <TableCell align="right">
                 <Typography variant="subtitle1" fontWeight="bold">
                   6547
@@ -62,7 +62,7 @@ export default function Overview() {
             </TableRow>
 
             <TableRow>
-              <TableCell>Stock Issues</TableCell>
+              <TableCell>Items Out-of-stock</TableCell>
               <TableCell align="right">
                 <Typography variant="subtitle1" fontWeight="bold">
                   9562

@@ -1,5 +1,6 @@
+import PropTypes from "prop-types";
 import { Avatar, Typography } from "@mui/material";
-import React from "react";
+
 //more about avatar refres to https://mui.com/material-ui/react-avatar/
 export default function Product({ productName }) {
   return (
@@ -18,3 +19,7 @@ export default function Product({ productName }) {
     </>
   );
 }
+
+Product.propTypes = {
+  productName: PropTypes.string.isRequired, // 'productName' is required and should be a string
+};

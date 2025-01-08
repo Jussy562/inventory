@@ -1,11 +1,11 @@
 import { Box } from "@mui/material";
-import React from "react";
+// import React from "react";
 import ApexCharts from "react-apexcharts";
 
-export default function TotalSales() {
+export default function TotalItemIssued() {
   const options = {
     title: {
-      text: "Totale Sales",
+      text: "Totale Item Issued",
       align: "left",
       style: {
         fontSize: "16px",
@@ -13,7 +13,7 @@ export default function TotalSales() {
       },
     },
     subtitle: {
-      text: "Sales over time",
+      text: "Issued over time",
       align: "left",
       style: {
         fontSize: "16px",
@@ -26,8 +26,8 @@ export default function TotalSales() {
     },
     legend: {
       customLegendItems: [
-        "current Week  <b>$31,000<b/>",
-        "Previous Week <b>$37,000<b/>",
+        "current Week  <b>31,000<b/>",
+        "Previous Week <b>37,000<b/>",
       ],
       position: "top",
       horizontalAlign: "center",
@@ -66,11 +66,11 @@ export default function TotalSales() {
   const series = [
     {
       type: "line", //here we can define multiple type of chart in the same box
-      name: "series-1",
+      name: "Total",
       data: [2000, 3200, 3250, 4700, 3900, 4900, 3200],
     },
     {
-      name: "series-2",
+      name: "Total",
       data: [1500, 1900, 1800, 2900, 2600, 3200, 2200],
     },
   ];

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import ApexCharts from "react-apexcharts";
 import { Box } from "@mui/material";
 export default function Channels() {
@@ -8,25 +8,25 @@ export default function Channels() {
   useEffect(() => {
     setChannelData([
       {
-        name: "Online Store",
+        name: "IMSC Store",
         data: [14, 25, 21, 17, 12, 13, 11],
       },
       {
-        name: "Amazon Marketplace",
+        name: "SD Village Store",
         data: [13, 23, 20, 8, 13, 27, 33],
       },
       {
-        name: "eBay Marketplace",
+        name: "Onsite Store",
         data: [11, 17, 15, 15, 21, 14, 15],
       },
-      {
-        name: "Physical Store",
-        data: [50, 27, 13, 19, 16, 10, 5],
-      },
-      {
-        name: "Distributors",
-        data: [33, 4, 25, 20, 24, 11, 44],
-      },
+      // {
+      //   name: "Physical Store",
+      //   data: [50, 27, 13, 19, 16, 10, 5],
+      // },
+      // {
+      //   name: "Distributors",
+      //   data: [33, 4, 25, 20, 24, 11, 44],
+      // },
     ]);
 
     return () => {
@@ -34,14 +34,14 @@ export default function Channels() {
     };
   }, []);
 
-  let totalArray = [];
-  const total = channelData.forEach((value) => {
-    const data = value.data;
-    if (totalArray.length === 0) totalArray = [...data];
-    else {
-      data.forEach((val, index) => (totalArray[index] += val));
-    }
-  });
+  // let totalArray = [];
+  // const total = channelData.forEach((value) => {
+  //   const data = value.data;
+  //   if (totalArray.length === 0) totalArray = [...data];
+  //   else {
+  //     data.forEach((val, index) => (totalArray[index] += val));
+  //   }
+  // });
 
   const options3 = {
     chart: {

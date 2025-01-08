@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { Box, Grid } from "@mui/material";
 
 import UilReceipt from "@iconscout/react-unicons/icons/uil-receipt";
@@ -6,8 +6,8 @@ import UilBox from "@iconscout/react-unicons/icons/uil-box";
 import UilTruck from "@iconscout/react-unicons/icons/uil-truck";
 import UilCheckCircle from "@iconscout/react-unicons/icons/uil-check-circle";
 import InfoCard from "../../subComponents/InfoCard";
-import TotalSales from "./TotalSales";
-import SalesByCity from "./SalesByCity";
+import TotalItemIssued from "./TotalSales";
+import IssuedByDepartment from "./SalesByCity";
 import Channels from "./Channels";
 import TopSellingProduct from "./TopSellingProduct";
 export default class Home extends Component {
@@ -21,28 +21,28 @@ export default class Home extends Component {
     const cardComponent = [
       {
         icon: <UilBox size={60} color={"#F6F4EB"} />,
-        title: "Picked",
+        title: "Total Items",
         subTitle: "1256",
         mx: 3,
         my: 0,
       },
       {
         icon: <UilTruck size={60} color={"#F6F4EB"} />,
-        title: "Shipped",
+        title: "In-stock",
         subTitle: "12",
         mx: 5,
         my: 0,
       },
       {
         icon: <UilCheckCircle size={60} color={"#F6F4EB"} />,
-        title: "Delivered",
+        title: "Item Issued",
         subTitle: "15",
         mx: 5,
         my: 0,
       },
       {
         icon: <UilReceipt size={60} color={"#F6F4EB"} />,
-        title: "Invoice",
+        title: "Out of stock",
         subTitle: "07",
         mx: 3,
         my: 0,
@@ -77,10 +77,10 @@ export default class Home extends Component {
 
         <Grid container sx={{ marginX: 3 }}>
           <Grid item md={8}>
-            <TotalSales data={data} />
+            <TotalItemIssued data={data} />
           </Grid>
           <Grid item md={4}>
-            <SalesByCity data={data} />
+            <IssuedByDepartment data={data} />
           </Grid>
         </Grid>
 

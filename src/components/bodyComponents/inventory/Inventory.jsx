@@ -1,5 +1,5 @@
 import { Grid, Box, Typography } from "@mui/material";
-import React, { Component } from "react";
+import { Component } from "react";
 import Products from "./Products";
 import Overview from "./Overview";
 export default class Inventory extends Component {

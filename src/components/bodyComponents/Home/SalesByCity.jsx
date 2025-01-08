@@ -1,25 +1,25 @@
-import React from "react";
+// import React from "react";
 import { Box } from "@mui/material";
 import ApexCharts from "react-apexcharts";
 
-export default function SalesByCity() {
+export default function IssuedByDepartment() {
   const donutOption = {
-    labels: ["Oujda", "Nador", "Berkan", "Casablanca"],
+    labels: ["Electrical", "Instrument", "Mechanical", "Fabrication"],
     legend: {
       position: "right",
       fontSize: "14",
 
       customLegendItems: [
-        "Oujda <b>30.3%</b>",
-        "Nador <b>37.9%</b>",
-        "Berkan <b>9.0%</b>",
-        "Casablanca <b>22.8%</b>",
+        "Electrical <b>30.3%</b>",
+        "Instrument <b>37.9%</b>",
+        "Mechanical <b>9.0%</b>",
+        "Fabrication <b>22.8%</b>",
       ],
       //   const total = data.reduce((sum, value) => sum + value, 0);
       // const percentages = data.map(value => ((value / total) * 100).toFixed(2) + '%');
     },
     title: {
-      text: "Sales By City",
+      text: "Issued By Department",
     },
   };
   const donutSeries = [44, 55, 13, 33];

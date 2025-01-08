@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import {
   Box,
   Table,
@@ -11,16 +11,11 @@ import {
 } from "@mui/material";
 export default function TopSellingProduct() {
   const products = [
-    { name: "ASOS Ridey", price: 25.05, quantity: 73, amount: 1.828 },
-    {
-      name: "Philip Morris International",
-      price: 85.05,
-      quantity: 84,
-      amount: 7.144,
-    },
-    { name: "Donna Karan", price: 96.05, quantity: 94, amount: 9.028 },
-    { name: "Marco Pollo", price: 31.09, quantity: 51, amount: 1.585 },
-    { name: "Dolce Gabbana", price: 27.09, quantity: 78, amount: 2.113 },
+    { name: "Hand glove",  quantity: 1000, },
+    { name: "Eye-goggle",  quantity: 800,  },
+    { name: "Safety Shoes",  quantity: 500, },
+    { name: "Nose mask",  quantity: 400,  },
+    { name: "Ear plug",  quantity: 300,  },
   ];
   return (
     <Box
@@ -33,16 +28,16 @@ export default function TopSellingProduct() {
       }}
     >
       <Typography variant="h6" fontWeight={"bold"} sx={{ mx: 3 }}>
-        Top selling products
+        Top Item Issued
       </Typography>
       <TableContainer>
         <Table>
           <TableHead>
             <TableRow>
               <TableCell sx={{ fontWeight: "bolder" }}>Name</TableCell>
-              <TableCell sx={{ fontWeight: "bolder" }}>Price</TableCell>
+            
               <TableCell sx={{ fontWeight: "bolder" }}>Quantity</TableCell>
-              <TableCell sx={{ fontWeight: "bolder" }}>Amount</TableCell>
+             
             </TableRow>
           </TableHead>
           <TableBody>
@@ -50,9 +45,9 @@ export default function TopSellingProduct() {
               return (
                 <TableRow key={id}>
                   <TableCell>{product.name}</TableCell>
-                  <TableCell>{product.price}</TableCell>
+                  
                   <TableCell>{product.quantity}</TableCell>
-                  <TableCell>{product.amount}</TableCell>
+                  
                 </TableRow>
               );
             })}

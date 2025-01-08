@@ -1,5 +1,5 @@
-import { Typography } from "@mui/material";
-import React from "react";
+// import { Typography } from "@mui/material";
+// import React from "react";
 import Product from "./Product";
 import { DataGrid } from "@mui/x-data-grid";
 import productList from "./productList";
@@ -13,7 +13,7 @@ export default function Products() {
     },
     {
       field: "product",
-      headerName: "Product",
+      headerName: "Item",
       width: 400,
       description: "",
       //same here we have the cell data which i will get the value of the cells in the tables cellData.row.fieldName
@@ -31,17 +31,17 @@ export default function Products() {
     },
     {
       field: "price",
-      headerName: "Price",
+      headerName: "Issued",
       width: 150,
       description: "price of the product",
-      valueGetter: (params) => "$" + params.row.stock,
+      valueGetter: (params) =>  params.row.stock,
     },
     {
       field: "stock",
       headerName: "Stock",
       width: 200,
       description: "how many items in the stock",
-      valueGetter: (params) => params.row.stock + " pcs",
+      valueGetter: (params) => params.row.stock,
     },
   ];
 
