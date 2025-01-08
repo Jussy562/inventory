@@ -65,7 +65,7 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<RootComponent />}>
         <Route index element={<Home />} />
-        <Route path="/home" element={<Home />}></Route>
+        <Route path="/" element={<Home />}></Route>
         <Route path="/inventory" element={<Inventory />}></Route>
         <Route path="/orders" element={<Order />}></Route>
         <Route path="/customers" element={<Customer />}></Route>
