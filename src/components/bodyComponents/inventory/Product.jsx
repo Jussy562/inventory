@@ -10,7 +10,7 @@ export default function Product({ productName }) {
         // src="image/source"
         sx={{ width: 30, height: 30 }}
       >
-        A
+        AM
       </Avatar>
 
       <Typography sx={{ mx: 3 }} variant="subtitle2">
