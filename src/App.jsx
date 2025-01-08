@@ -11,7 +11,7 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
-import Home from "./components/bodyComponents/home/home";
+import Home from "./components/bodyComponents/temp_home/home";
 import Inventory from "./components/bodyComponents/inventory/Inventory";
 import Customer from "./components/bodyComponents/customer/Customer";
 import Revenue from "./components/bodyComponents/revenue/Revenue";
