@@ -68,7 +68,7 @@ export default function NavBarComponent() {
                     textDecoration: "none",
                   }}
                 >
-                  ADIMS
+                 ARCO STORE
                 </Typography>
 
                 <Box
@@ -104,10 +104,10 @@ export default function NavBarComponent() {
                     aria-haspopup="true"
                   >
                     <Tooltip title="account settings">
-                      <Avatar sx={{ width: 32, height: 32 }}>Z</Avatar>
+                      <Avatar sx={{ width: 32, height: 32 }}>TB</Avatar>
                     </Tooltip>
                   </IconButton>
-                  <Typography fontFamily={"Inter"}>ADMI ZAKARYAE</Typography>
+                  <Typography fontFamily={"Inter"}>TONYE BROWN</Typography>
                 </Box>
 
                 <Menu
