@@ -11,11 +11,11 @@ import {
 } from "@mui/material";
 export default function TopSellingProduct() {
   const products = [
-    { name: "Hand glove",  quantity: 1000, },
+    { name: "Hand glove",  quantity: 1500, },
     { name: "Eye-goggle",  quantity: 800,  },
     { name: "Safety Shoes",  quantity: 500, },
     { name: "Nose mask",  quantity: 400,  },
-    { name: "Ear plug",  quantity: 300,  },
+    { name: "Ear plug",  quantity: 200,  },
   ];
   return (
     <Box
