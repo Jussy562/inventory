@@ -1,6 +1,6 @@
 import { Avatar, Box, Button, Modal, Typography } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
-import React, { Component } from "react";
+import { Component } from "react";
 import OrderModal from "./OrderModal";
 import orders from "./listOrders";
 export default class OrderList extends Component {

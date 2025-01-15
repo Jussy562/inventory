@@ -24,7 +24,7 @@ export default class CustomerList extends Component {
                 variant="square"
                 sx={{ borderRadius: 1, width: 30, height: 30 }}
               >
-                Z
+                A
               </Avatar>
               <Typography variant="subtitle2" sx={{ mx: 3 }}>
                 {`${params.row.firstName || ""} ${params.row.lastName || ""} `}
@@ -40,19 +40,19 @@ export default class CustomerList extends Component {
         description: "number of order that the customer made",
         valueGetter: (params) => params.row.orders.length,
       },
-      {
-        field: "total",
-        headerName: "Total Amount",
-        width: 300,
-        description: "total amount of the order",
-        valueGetter: (params) => {
-          const total = 300;
-          return total;
-        },
-      },
+      // {
+      //   field: "total",
+      //   headerName: "Total Amount",
+      //   width: 300,
+      //   description: "total amount of the order",
+      //   valueGetter: (params) => {
+      //     const total = 300;
+      //     return total;
+      //   },
+      // },
       {
         field: "orderHistory",
-        headerName: "Order Details",
+        headerName: "Date",
         width: 300,
         description: "the details of the order",
         valueGetter: (params) => {
@@ -62,7 +62,7 @@ export default class CustomerList extends Component {
       },
       {
         field: "mobile",
-        headerName: "Mobile",
+        headerName: "Reg",
         width: 300,
         description: "total amount of the order",
       },
